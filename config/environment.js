@@ -2,6 +2,16 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' kosso.co.uk",
+      //'font-src': "'self' data: use.typekit.net",
+      'connect-src': "'self' kosso.co.uk",
+      'object-src': "'self' kosso.co.uk",
+      'img-src': "'self' kosso.co.uk",
+      'style-src': "'self' 'kosso.co.uk",
+      'frame-src': "kosso.co.uk"
+    },
     modulePrefix: 'ember-blog',
     environment: environment,
     baseURL: '/',

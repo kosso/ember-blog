@@ -40,10 +40,10 @@ var posts = [
 ];
 
 var authors = [{
-        id: 1,
-        name: "Kosso",
-        posts: [1, 2]
-      }];
+    id: 1,
+    name: "Kosso",
+    posts: [1, 2]
+  }];
 
 module.exports = function(app) {
   var express = require('express');
